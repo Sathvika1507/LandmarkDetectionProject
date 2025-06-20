@@ -2,17 +2,17 @@
 
 This internship project demonstrates facial landmark detection using a Convolutional Neural Network (CNN) built with TensorFlow and Keras. The model is trained to predict key facial points from grayscale images.
 
-## 📁 Project Structure
-
 LandmarkDetectionProject/
-├── train_model.py           -> Trains the CNN and saves the model
-├── predict.py               -> Loads the model and predicts keypoints
-├── test.jpg                 -> Sample image to test prediction
-├── landmarks_dataset/
+├── train_model.py               # Trains the CNN and saves landmark_model.h5
+├── predict.py                   # Loads the model and predicts landmarks on test.jpg
+├── test.jpg                     # Sample image for testing prediction
+├── landmarks_dataset/           # Dataset folder
 │   ├── images/
-│   │   └── sample.jpg       -> Sample training image
-│   └── labels.csv           -> CSV file with landmark coordinates
-└── README.md                -> You're reading it!
+│   │   └── sample.jpg           # Sample training image
+│   └── labels.csv              # CSV file containing image names and landmark coordinates
+├── .gitignore                   # (Optional) To ignore large model files like .h5
+└── README.md                    # Project documentation (this file)
+
 
 ## 🧠 Model Details
 
@@ -66,7 +66,6 @@ After prediction, the result is a grayscale image with red dots on facial keypoi
 ## ✍️ Author
 
 Sathvika Bogam  
-ECE Intern Project – IIIT Nagpur
 
 ## 📌 Notes
 
